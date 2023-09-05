@@ -8,8 +8,8 @@ body{
    
 }
 .bgcontainer{
-    width:100%;
     height:320px;
+   
 }
 h2{
     text-align: center;
@@ -21,8 +21,6 @@ h2{
     display: flex;
     justify-content: center;
     flex-direction: row;
-   
-
 }
 .maindiv{
     position: absolute;
@@ -32,7 +30,7 @@ h2{
 }
 .input{
     padding:14px;
-    width:300px;
+    width:270px;
     border:2px solid black;
     font: bold;
     
@@ -62,7 +60,6 @@ h2{
     width: fit-content;
 }
 .griddiv{
-
     display: flex;
     width:300px;
     height:110px;
@@ -83,13 +80,20 @@ p{
 }
 .maininfo{
     color:black;
-    font-size:25px;
+    font-size:26px;
     font-weight: 600;
     text-align: center;
     margin-top: 5px;
 
 }
-#map { height: 500px; }
+/* #map {
+     height: 500px;
+     width:max-content;
+
+ } */
+ .mapcontainer{
+    height:500px;
+ }
 
 .errtext{
     color:#B0FC38;
@@ -98,3 +102,62 @@ p{
     padding-top:10px;
     margin:0;
 }
+@media (max-width: 500px) {
+    .mapcontainer{
+        width:425px;
+        margin:0;
+        padding:0;
+        z-index: 0;
+    }
+
+    .infocontainer{
+        
+        flex-direction: column;
+        width:300px;
+        position: absolute;
+        top: 170px; 
+        left: 10px;
+        z-index: 1000;
+        padding:12px;
+        border-radius: 15px;
+        
+    }
+    .griddiv{
+        
+        width:150px;
+        height:50px;
+        flex-direction: column;
+        border-bottom:1px solid grey;
+        border-right:1px solid transparent;
+        padding:0px;
+        padding-bottom:40px;
+    }
+    .bgcontainer{
+        width:427px;
+    }
+    .maininfo{
+        font-size:17px;
+        margin-top:0;
+        padding:0;
+        
+    }
+    .maindiv{
+        left:8%;
+        
+    }
+    MarkerPosition{
+        z-index:10000;
+
+    }
+    
+  }
+/* @media (max-width: 380px) {
+    .mapcontainer{
+        width:450px;
+        margin:0;
+        padding:0;
+        z-index: 0;
+    }
+    
+
+} */
