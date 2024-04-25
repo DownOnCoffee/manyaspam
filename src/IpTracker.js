@@ -31,9 +31,10 @@ function IpTracker() {
         setinvalid(true);
       }
       
+      
       axios
       .get(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=at_DqvcQvkhwSKtLZBsnSPRuR3EzVbRV&ipAddress=${ipaddress}`
+        `https://geo.ipify.org/api/v2/country,city?apiKey=at_0kRZxZvjEz85nreUPpOO65fSrODQO&ipAddress=${ipaddress}`
       )
       .then((response) => {
         console.log(response.data);
