@@ -72,7 +72,7 @@ function IpTracker() {
         <img className="bgcontainer" src={bluebg}></img>
       </div>
       <div className="maindiv">
-        <h2>IP Address Tracker</h2>
+        <h1>TraceSpot</h1>
 
         <div className="ipaddsearch">
           <input
